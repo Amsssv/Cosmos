@@ -21,148 +21,146 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-top ">
-            <div class="header-top__navigation">
-                <ul class="language__list">
-                    <li class="language__item">English</li>
-                </ul>
-                <ul class="currency__list">
-                    <li class="currency__item">
-                        <span class="currency__flag">
-                            <img src="./img/usunitedstatesflag.svg">
-                        </span>USD
-                    </li>
-                </ul>
-                <a class="header-top__sales sales">
-                    <i class="sales__percentage">
-                        %
-                    </i>
-                    Clearance Sales
-                </a>
-            </div>
-            <div class="header-top__shipping shipping">
-                <span class="shipping__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="20" style="fill:#ffffff">
-                        <path
-                            d="M120.001,753.38c10.372,0,18.807-8.435,18.807-18.807c0-10.362-8.435-18.799-18.807-18.799 c-10.362,0-18.807,8.437-18.807,18.799C101.194,744.945,109.639,753.38,120.001,753.38z M120.001,689.164 c25.055,0,45.422,20.367,45.422,45.409c0,25.052-20.367,45.427-45.422,45.427c-25.049,0-45.422-20.375-45.422-45.427 C74.579,709.532,94.952,689.164,120.001,689.164z M138.378,652.109c9.247,2.107,18.165,5.765,26.377,10.925 c6.215,3.917,8.089,12.134,4.172,18.35c-3.912,6.23-12.124,8.103-18.35,4.186c-18.605-11.703-42.561-11.698-61.156,0 c-6.227,3.917-14.438,2.043-18.346-4.186c-3.917-6.221-2.049-14.433,4.168-18.35c8.211-5.154,17.129-8.818,26.376-10.925 l-25.395-25.394c-5.192-5.197-5.192-13.621,0.005-18.817c2.601-2.596,6.004-3.897,9.406-3.897c3.408,0,6.816,1.3,9.417,3.897 l24.943,24.954l24.965-24.954c5.192-5.197,13.616-5.197,18.812,0c5.202,5.196,5.202,13.626,0,18.817 C163.773,626.715,138.378,652.109,138.378,652.109z"
-                            transform="matrix(.125 0 0 -.125 0 102.5)" />
-                    </svg>
-                </span>
-                <span>Hurrah! Get Free Shipping on All Orders Over $99!</span>
-            </div>
-            <div class="header-top__contancts contacts">
-                <a class="contacts__number number" href="tel:+01-987-654-3210">
-                    <i class="number__icon">
-                        <img src="./img/phone-icon.svg">
-                    </i>
-                    <p class="number__content">
-                        +01-987-654-3210
-                    </p>
-                </a>
-                <a class="contacts__email email" href="mailto:contact@store.com">
-                    <i class="email__icon">
-                        <img src="./img/message-icon.svg">
-                    </i>
-                    <div class="email__content">
-                        contact@store.com
-                    </div>
-                </a>
-            </div>
+    <div class="top-bar">
+        <div class="top-bar__navigation">
+            <ul class="language-list">
+                <li class="language-list__item">English</li>
+            </ul>
+            <ul class="currency-list">
+                <li class="currency-list__item">
+                    <span class="currency-list__flag">
+                        <img src="./img/usunitedstatesflag.svg">
+                    </span>USD
+                </li>
+            </ul>
+            <a class="top-bar__sales sales">
+                <i class="sales__percentage">
+                    %
+                </i>
+                Clearance Sales
+            </a>
         </div>
-        <section class="header-bottom">
-            <div class="header-bottom__menu">
-                <button class="header-bottom__burger"></button>
-                <img class="header-bottom__logo" height="20" width="125"
-                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/logo_24c466ba-4775-4bc1-9c42-25d442f5af92_125x20.png?v=1632726079"
-                    alt="Theme: Cosmos " title="Theme: Cosmos" itemprop="logo">
-            </div>
-            <div class="header-bottom__navigation">
-                <ul class="header-bottom__list">
-                    <li class="header-bottom__item">
-                        Home
-                        <span class="header-bottom__item--header">NEW</span>
-                    </li>
-                    <li class="header-bottom__item">
-                        Shop
-                        <span class="header-bottom__item--header">HOT</span>
-                    </li>
-                    <li class="header-bottom__item">
-                        Pages
-                    </li>
-                    <li class="header-bottom__item">
-                        Blog
-                    </li>
-                    <li class="header-bottom__item">
-                        Look Book
-                    </li>
-                </ul>
-            </div>
-            <div class="header-bottom__user-actions">
-                <button class="header-bottom__search">
-                    <svg width="14px" height="20px" viewBox="0 0 512.000000 512.000000" style="fill: #444444"
-                        preserveAspectRatio="xMidYMid meet">
-                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+        <div class="top-bar__shipping shipping">
+            <span class="shipping__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="20" style="fill:#ffffff">
+                    <path
+                        d="M120.001,753.38c10.372,0,18.807-8.435,18.807-18.807c0-10.362-8.435-18.799-18.807-18.799 c-10.362,0-18.807,8.437-18.807,18.799C101.194,744.945,109.639,753.38,120.001,753.38z M120.001,689.164 c25.055,0,45.422,20.367,45.422,45.409c0,25.052-20.367,45.427-45.422,45.427c-25.049,0-45.422-20.375-45.422-45.427 C74.579,709.532,94.952,689.164,120.001,689.164z M138.378,652.109c9.247,2.107,18.165,5.765,26.377,10.925 c6.215,3.917,8.089,12.134,4.172,18.35c-3.912,6.23-12.124,8.103-18.35,4.186c-18.605-11.703-42.561-11.698-61.156,0 c-6.227,3.917-14.438,2.043-18.346-4.186c-3.917-6.221-2.049-14.433,4.168-18.35c8.211-5.154,17.129-8.818,26.376-10.925 l-25.395-25.394c-5.192-5.197-5.192-13.621,0.005-18.817c2.601-2.596,6.004-3.897,9.406-3.897c3.408,0,6.816,1.3,9.417,3.897 l24.943,24.954l24.965-24.954c5.192-5.197,13.616-5.197,18.812,0c5.202,5.196,5.202,13.626,0,18.817 C163.773,626.715,138.378,652.109,138.378,652.109z"
+                        transform="matrix(.125 0 0 -.125 0 102.5)" />
+                </svg>
+            </span>
+            <span>Hurrah! Get Free Shipping on All Orders Over $99!</span>
+        </div>
+        <div class="top-bar__contancts contacts">
+            <a class="contacts__number number" href="tel:+01-987-654-3210">
+                <i class="number__icon">
+                    <img src="./img/phone-icon.svg">
+                </i>
+                <p class="number__content">
+                    +01-987-654-3210
+                </p>
+            </a>
+            <a class="contacts__email email" href="mailto:contact@store.com">
+                <i class="email__icon">
+                    <img src="./img/message-icon.svg">
+                </i>
+                <div class="email__content">
+                    contact@store.com
+                </div>
+            </a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__menu">
+            <button class="header__burger"></button>
+            <img class="header__logo" height="20" width="125"
+                src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/logo_24c466ba-4775-4bc1-9c42-25d442f5af92_125x20.png?v=1632726079"
+                alt="Theme: Cosmos " title="Theme: Cosmos" itemprop="logo">
+        </div>
+        <div class="header__navigation">
+            <ul class="header__list">
+                <li class="header__item">
+                    Home
+                    <span class="header__item--header">NEW</span>
+                </li>
+                <li class="header__item">
+                    Shop
+                    <span class="header__item--header">HOT</span>
+                </li>
+                <li class="header__item">
+                    Pages
+                </li>
+                <li class="header__item">
+                    Blog
+                </li>
+                <li class="header__item">
+                    Look Book
+                </li>
+            </ul>
+        </div>
+        <div class="header__user-actions">
+            <button class="header__search">
+                <svg width="14px" height="20px" viewBox="0 0 512.000000 512.000000" style="fill: #444444"
+                    preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                        <path
+                            d="M1940 5109 c-357 -37 -713 -177 -1020 -403 -114 -83 -323 -290 -407 -402 -264 -349 -405 -745 -420 -1179 -9 -259 23 -481 103 -723 100 -301 272 -578 500 -806 334 -334 756 -539 1227 -597 127 -15 451 -7 572 15 281 51 531 147 758 289 l87 56 614 -638 c337 -350 627 -649 644 -663 108 -90 294 -65 376 50 42 58 54 96 55 164 2 108 -5 117 -654 790 -324 336 -600 624 -612 639 l-23 27 54 68 c362 465 503 1076 385 1674 -59 299 -214 627 -412 873 -442 550 -1129 837 -1827 766z m410 -543 c649 -87 1163 -562 1300 -1202 28 -127 38 -382 20 -503 -49 -348 -196 -645 -436 -885 -231 -232 -518 -378 -844 -432 -109 -18 -349 -18 -466 0 -422 64 -804 309 -1039 666 -84 127 -129 220 -175 359 -51 151 -71 264 -77 434 -33 853 655 1569 1512 1576 55 0 147 -6 205 -13z">
+                        </path>
+                    </g>
+                </svg>
+                <span>Search</span>
+            </button>
+            <ul class="header__myaccount ">
+                My Account
+            </ul>
+            <ul class="header__myaccount--mobile ">
+                <img src="./img/user_icon.svg" alt="" srcset="">
+            </ul>
+            <div class="header__cart cart">
+                <a href="" class="cart__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="20"
+                        viewBox="0 0 512 512" width="20">
+                        <g>
                             <path
-                                d="M1940 5109 c-357 -37 -713 -177 -1020 -403 -114 -83 -323 -290 -407 -402 -264 -349 -405 -745 -420 -1179 -9 -259 23 -481 103 -723 100 -301 272 -578 500 -806 334 -334 756 -539 1227 -597 127 -15 451 -7 572 15 281 51 531 147 758 289 l87 56 614 -638 c337 -350 627 -649 644 -663 108 -90 294 -65 376 50 42 58 54 96 55 164 2 108 -5 117 -654 790 -324 336 -600 624 -612 639 l-23 27 54 68 c362 465 503 1076 385 1674 -59 299 -214 627 -412 873 -442 550 -1129 837 -1827 766z m410 -543 c649 -87 1163 -562 1300 -1202 28 -127 38 -382 20 -503 -49 -348 -196 -645 -436 -885 -231 -232 -518 -378 -844 -432 -109 -18 -349 -18 -466 0 -422 64 -804 309 -1039 666 -84 127 -129 220 -175 359 -51 151 -71 264 -77 434 -33 853 655 1569 1512 1576 55 0 147 -6 205 -13z">
+                                d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z">
                             </path>
                         </g>
                     </svg>
-                    <span>Search</span>
-                </button>
-                <ul class="header-bottom__myaccount ">
-                    My Account
-                </ul>
-                <ul class="header-bottom__myaccount--mobile ">
-                    <img src="./img/user_icon.svg" alt="" srcset="">
-                </ul>
-                <div class="header-bottom__cart cart">
-                    <a href="" class="cart__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512"
-                            height="20" viewBox="0 0 512 512" width="20">
-                            <g>
-                                <path
-                                    d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z">
-                                </path>
-                            </g>
-                        </svg>
-                        <div class="cart__counter">0</div>
-                    </a>
-                </div>
+                    <div class="cart__counter">0</div>
+                </a>
             </div>
-        </section>
+        </div>
     </header>
     <main class="page">
-        <section class="page__home home">
-            <div class="swiper__wrapper owl-carousel owl-theme">
-                <div class="swiper__slaider">
-                    <a class="slider__image" href="#" tabindex="0">
+        <section class="page__banner banner">
+            <div class="banner__content owl-carousel owl-theme">
+                <div class="banner__column">
+                    <a class="banner__image" href="#" tabindex="0">
                         <img height="800" width="1903"
                             src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/slider-01_7fd7a08e-fc04-445c-8c85-c7513444fb1b_1903x870.jpg?v=1634628647"
                             alt="slider-image">
                     </a>
-                    <div class="slider__content">
-                        <div class="slider-subtitle" style="color:#222222">Shop Now &amp; Save Up To 25% OFF
+                    <div class="banner__form">
+                        <div class="banner-subtitle" style="color:#222222">Shop Now &amp; Save Up To 25% OFF
                         </div>
-                        <h2 class="slider-title" style="color:#222222">Big Collection Styles
+                        <h2 class="banner-title" style="color:#222222">Big Collection Styles
                             Modern Wear</h2>
-                        <div class="slider-button">
+                        <div class="banner-button">
                             <a href="#" tabindex="0">Shop Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper__slaider">
-                    <a class="slider__image" href="#" tabindex="0">
+                <div class="banner__column">
+                    <a class="banner__image" href="#" tabindex="0">
                         <img height="800" width="1903"
                             src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/slider-01_7fd7a08e-fc04-445c-8c85-c7513444fb1b_1903x870.jpg?v=1634628647"
                             alt="slider-image">
                     </a>
-                    <div class="slider__content">
-                        <div class="slider-subtitle" style="color:#222222">Shop Now &amp; Save Up To 25% OFF
+                    <div class="banner__form">
+                        <div class="banner-subtitle" style="color:#222222">Shop Now &amp; Save Up To 25% OFF
                         </div>
-                        <h2 class="slider-title" style="color:#222222">Big Collection Styles
+                        <h2 class="banner-title" style="color:#222222">Big Collection Styles
                             Modern Wear</h2>
-                        <div class="slider-button">
+                        <div class="banner-button">
                             <a href="#" tabindex="0">Shop Now</a>
                         </div>
                     </div>
@@ -747,136 +745,136 @@
                     </div>
                 </div>
         </section>
-        <section class="page__footer footer">
-            <div class="footer__container container">
-                <div class="footer__content">
-                    <div class="footer__discover">
-                        <div class="footer__column">
-                            <div class="footer__item item">
-                                <h5 class="item__title">
-                                    Information
-                                </h5>
-                                <ul class="footer-navigation__list ">
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Search
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Legal Notice
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            About us
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Terms and Condition
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Contact us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer__column">
-                            <div class="footer__item item">
-                                <h5 class="item__title">
-                                    Information
-                                </h5>
-                                <ul class="footer-navigation__list">
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Search
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Legal Notice
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            About us
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Terms and Condition
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Contact us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer__column">
-                            <div class="footer__item item">
-                                <h5 class="item__title">
-                                    Information
-                                </h5>
-                                <ul class="footer-navigation__list">
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Search
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Legal Notice
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            About us
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Terms and Condition
-                                        </a>
-                                    </li>
-                                    <li class="footer-navigation__item">
-                                        <a href="#" class="footer-navigation__link">
-                                            Contact us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__discover">
+                    <div class="footer__column">
+                        <div class="footer__item item">
+                            <h5 class="item__title">
+                                Information
+                            </h5>
+                            <ul class="footer-navigation__list ">
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Search
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Legal Notice
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Terms and Condition
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="footer__newsletter newsletter">
-                        <h5 class="newsletter__title">Newsletter</h5>
-                        <p class="newsletter__description">Exceptional quality. Ethical factories. Radical
-                            Transparency. Sign up to enjoy free U.S. shipping and returns on your first order.</p>
-                        <form action="" class="newsletter__form form">
-                            <input type="text" placeholder="email@example.com" class="form__input">
-                            <button class="form__bottom">Subscribe</button>
-                        </form>
+                    <div class="footer__column">
+                        <div class="footer__item item">
+                            <h5 class="item__title">
+                                Information
+                            </h5>
+                            <ul class="footer-navigation__list">
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Search
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Legal Notice
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Terms and Condition
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__item item">
+                            <h5 class="item__title">
+                                Information
+                            </h5>
+                            <ul class="footer-navigation__list">
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Search
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Legal Notice
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Terms and Condition
+                                    </a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a href="#" class="footer-navigation__link">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="footer__newsletter newsletter">
+                    <h5 class="newsletter__title">Newsletter</h5>
+                    <p class="newsletter__description">Exceptional quality. Ethical factories. Radical
+                        Transparency. Sign up to enjoy free U.S. shipping and returns on your first order.</p>
+                    <form action="" class="newsletter__form form">
+                        <input type="text" placeholder="email@example.com" class="form__input">
+                        <button class="form__bottom">Subscribe</button>
+                    </form>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer-bottom">
-        <div class="footer-bottom__container container">
-            <div class="footer-bottom__content">
-                <div class="footer-bottom__copyright">
+        </div>
+    </footer>
+    <div class="footer-bar">
+        <div class="footer-bar__container container">
+            <div class="footer-bar__content">
+                <div class="footer-bar__copyright">
                     <small>Copyright © 2022</small> <a href="/" title="">Theme: Cosmos (Password: 1)</a> | <a
                         target="_blank" rel="nofollow"
                         href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered
                         by Shopify</a>
                 </div>
-                <ul class="footer-bottom__social social">
+                <ul class="footer-bar__social social">
                     <li class="social__item">
                         <a href="#" class="social__link"><img src="./img/TWITTER_icon.svg" alt=""></a>
                     </li>
@@ -895,7 +893,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </div>
     <script src="./js/categories.js"></script>
     <script src="./js/services.js"></script>
     <script src="./js/products.js"></script>
