@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
         rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>Cosmos Cosmetic 2</title>
 </head>
 
@@ -172,102 +175,79 @@
                         <h3 class="section__title">Shop By Categories</h3>
                         <p class="section__description"> Add out new arrivals to your weekly lineup</p>
                     </section>
-                    <div class="categories__slider">
-                        <div class="categories__carusel">
-                            <div class="categories__column">
-                                <div class="categories__item">
-                                    <a class="categories__image _ibg" href="#">
-                                        <img class="" height="650" width="490"
-                                            src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-01_490x650.jpg?v=1632726201"
-                                            alt="collection-img">
-                                    </a>
-                                    <div class="categories__content content">
-                                        <a class="content__description" href="#">
-                                            Body Care <i>-20 items-</i>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="categories__carusel owl-carousel">
+                        <div class="categories__item">
+                            <a class="categories__image _ibg" href="#">
+                                <img class="" height="650" width="490"
+                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-01_490x650.jpg?v=1632726201"
+                                    alt="collection-img">
+                            </a>
+                            <div class="categories__content">
+                                <a href="#" class="categories__title">Body Care</a>
+                                <a href="#" class="categories__description">-20 <i>Items</i>-</a>
                             </div>
-                            <div class="categories__column">
-                                <div class="categories__item">
-                                    <a class="categories__image _ibg" href="#">
-                                        <img class="" height="650" width="490"
-                                            src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-02_490x650.jpg?v=1632726201"
-                                            alt="collection-img">
-                                    </a>
-                                    <div class="categories__content content">
-                                        <a class="content__description" href="#">
-                                            Makeup <i>-5 items-</i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__image _ibg" href="#">
+                                <img class="" height="650" width="490"
+                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-02_490x650.jpg?v=1632726201"
+                                    alt="collection-img">
+                            </a>
+                            <div class="categories__content">
+                                <a href="#" class="categories__title">Makeup</a>
+                                <a href="#" class="categories__description">-5 <i>Items</i>-</a>
                             </div>
-                            <div class="categories__column">
-                                <div class="categories__item">
-                                    <a class="categories__image _ibg" href="#">
-                                        <img class="" height="650" width="490"
-                                            src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-03_490x650.jpg?v=1632726204"
-                                            alt="collection-img">
-                                    </a>
-                                    <div class="categories__content content">
-                                        <a class="content__description" href="#">
-                                            Face Care <i>-8 items-</i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="categories__item">
+                            <a class="categories__image _ibg" href="#">
+                                <img class="" height="650" width="490"
+                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-03_490x650.jpg?v=1632726204"
+                                    alt="collection-img">
+                            </a>
+                            <div class="categories__content">
+                                <a href="#" class="categories__title">Face Care</a>
+                                <a href="#" class="categories__description">-8 <i>Items</i>-</a>
                             </div>
-                            <div class="categories__column">
-                                <div class="categories__item">
-                                    <div class="categories__image _ibg">
-                                        <img class="" height="650" width="490"
-                                            src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-04_490x650.jpg?v=1632726205"
-                                            alt="collection-img">
-                                    </div>
-                                    <div class="categories__content content">
-                                        <a class="content__description" href="#">
-                                            Spa <i>-4 items-</i>
-                                        </a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="categories__item">
+                            <div class="categories__image _ibg">
+                                <img class="" height="650" width="490"
+                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/category-img-04_490x650.jpg?v=1632726205"
+                                    alt="collection-img">
+                            </div>
+                            <div class="categories__content ">
+                                <a href="#" class="categories__title">Spa</a>
+                                <a href="#" class="categories__description">-4 <i>Items</i>-</a>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="page__services services">
                 <div class="services__container container">
-                    <div class="services__content">
-                        <div class="services__column">
-                            <div class="services__item">
-                                <img class="services__image"
-                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-01_50x50.png?v=1632552999">
-                                <p class="services__title">Shop Worldwide</p>
-                                <p class="services__subtitle">Dropship Worldwide</p>
-                            </div>
+                    <div class="services__content owl-carousel">
+                        <div class="services__item ">
+                            <img class="services__image " style="width:50px"
+                                src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-01_50x50.png?v=1632552999">
+                            <p class="services__title">Shop Worldwide</p>
+                            <p class="services__subtitle">Dropship Worldwide</p>
                         </div>
-                        <div class="services__column">
-                            <div class="services__item">
-                                <img class="services__image"
-                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-02_50x50.png?v=1632553002">
-                                <p class="services__title">Big Saving Shop</p>
-                                <p class="services__subtitle">Saving Big Every Order</p>
-                            </div>
+                        <div class="services__item">
+                            <img class="services__image " style="width:50px"
+                                src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-02_50x50.png?v=1632553002">
+                            <p class="services__title">Big Saving Shop</p>
+                            <p class="services__subtitle">Saving Big Every Order</p>
                         </div>
-                        <div class="services__column">
-                            <div class="services__item">
-                                <img class="services__image"
-                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-03_50x50.png?v=1632553006">
-                                <p class="services__title">24H 7D Support</p>
-                                <p class="services__subtitle">One-on-one Support</p>
-                            </div>
+                        <div class="services__item">
+                            <img class="services__image" style="width:50px"
+                                src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-03_50x50.png?v=1632553006">
+                            <p class="services__title">24H 7D Support</p>
+                            <p class="services__subtitle">One-on-one Support</p>
                         </div>
-                        <div class="services__column">
-                            <div class="services__item">
-                                <img class="services__image"
-                                    src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-04_50x50.png?v=1632553016">
-                                <p class="services__title">Moncy Back Return</p>
-                                <p class="services__subtitle">Cancel Order Anytime</p>
-                            </div>
+                        <div class="services__item">
+                            <img class="services__image" style="width:50px"
+                                src="//cdn.shopify.com/s/files/1/0549/6517/4492/files/services-04_50x50.png?v=1632553016">
+                            <p class="services__title">Moncy Back Return</p>
+                            <p class="services__subtitle">Cancel Order Anytime</p>
                         </div>
                     </div>
                 </div>
@@ -288,7 +268,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="products__row">
+                    <div class="products__row owl-carousel">
                         <div class="products__column">
                             <div class="products__card card">
                                 <div class="card__image _ibg">
@@ -409,6 +389,50 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="products__column">
+                            <div class="products__card card">
+                                <div class="card__image _ibg">
+                                    <img
+                                        src="//cdn.shopify.com/s/files/1/0549/6517/4492/products/15_282x367.jpg?v=1632827664">
+                                </div>
+                                <div class="card__description">
+                                    <p class="card__title">Peach Blush Cream Prowder</p>
+                                    <div class="card__properties properties">
+                                        <ul class="properties__colors">
+                                            <li class="color color--active color--black"></li>
+                                        </ul>
+                                        <ul class="properties__sizes ">
+                                            <li class="size size--active">L</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__price">
+                                        <span class="card__price--new">$450.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__column">
+                            <div class="products__card card">
+                                <div class="card__image _ibg">
+                                    <img
+                                        src="//cdn.shopify.com/s/files/1/0549/6517/4492/products/15_282x367.jpg?v=1632827664">
+                                </div>
+                                <div class="card__description">
+                                    <p class="card__title">Peach Blush Cream Prowder</p>
+                                    <div class="card__properties properties">
+                                        <ul class="properties__colors">
+                                            <li class="color color--active color--black"></li>
+                                        </ul>
+                                        <ul class="properties__sizes ">
+                                            <li class="size size--active">L</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__price">
+                                        <span class="card__price--new">$450.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -449,26 +473,36 @@
             </section>
             <section class="page__brand brand">
                 <div class="brand__container container">
-                    <div class="brand__content">
+                    <div class="brand__content owl-carousel">
                         <a class="brand__logo">
-                            <img src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/02.png?v=1632744052"
-                                alt="" class="brand__image">
+                            <img style="	height: 130px;
+                            width: 130px;"
+                                src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/02.png?v=1632744052" alt=""
+                                class="brand__image">
                         </a>
                         <a class="brand__logo">
-                            <img src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/06.png?v=1632744052"
-                                alt="" class="brand__image">
+                            <img style="	height: 130px;
+                            width: 130px;"
+                                src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/06.png?v=1632744052" alt=""
+                                class="brand__image">
                         </a>
                         <a class="brand__logo">
-                            <img src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/03.png?v=1632744052"
-                                alt="" class="brand__image">
+                            <img style="	height: 130px;
+                            width: 130px;"
+                                src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/03.png?v=1632744052" alt=""
+                                class="brand__image">
                         </a>
                         <a class="brand__logo">
-                            <img src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/05.png?v=1632744052"
-                                alt="" class="brand__image">
+                            <img style="	height: 130px;
+                            width: 130px;"
+                                src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/05.png?v=1632744052" alt=""
+                                class="brand__image">
                         </a>
                         <a class="brand__logo">
-                            <img src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/01.png?v=1632744052"
-                                alt="" class="brand__image">
+                            <img style="	height: 130px;
+                            width: 130px;"
+                                src="	https://cdn.shopify.com/s/files/1/0549/6517/4492/files/01.png?v=1632744052" alt=""
+                                class="brand__image">
                         </a>
                     </div>
                 </div>
@@ -483,7 +517,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="products__row">
+                    <div class="products__row owl-carousel">
                         <div class="products__column">
                             <div class="products__card card">
                                 <div class="card__image _ibg">
@@ -866,7 +900,10 @@
             </div>
         </footer>
     </div>
-    <script src="js/sript.js"></script>
+    <script src="./js/categories.js"></script>
+    <script src="./js/services.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/brand.js"></script>
 </body>
 
 </html>
