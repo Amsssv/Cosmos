@@ -1,0 +1,23 @@
+{
+  "name": "cosmos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded src/scss:public/dist/css",
+    "sass-prod": "sass --no-source-map --style=compressed src/scss:public/dist/css",
+    "js-prod": "babel src --out-dir public/dist --presets=@babel/env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amsssv/Cosmos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "sass": "^1.54.5"
+  }
+}
