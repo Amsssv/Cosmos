@@ -52,6 +52,9 @@ input::-ms-clear {
 }
 
 button {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
     cursor: pointer;
 }
 
@@ -62,6 +65,9 @@ button::-moz-focus-inner {
 
 a,
 a:visited {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
     text-decoration: none;
 }
 

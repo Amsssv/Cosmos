@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>Cosmos Cosmetic 2</title>
 </head>
@@ -23,24 +24,37 @@
 <body>
     <div class="top-bar">
         <div class="top-bar__navigation">
-            <ul class="language-list">
-                <li class="language-list__item">English</li>
-            </ul>
-            <ul class="currency-list">
-                <li class="currency-list__item">
+            <div class="language-list">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    English
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">العربية</a></li>
+                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="currency-list">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="currency-list__flag">
-                        <img src="./img/usunitedstatesflag.svg">
+                        <img src="./img/USA_icon.svg">
                     </span>USD
-                </li>
-            </ul>
-            <a class="top-bar__sales sales">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                    <li><a class="dropdown-item" href="#">GPB</a></li>
+                    <li><a class="dropdown-item" href="#">AUD</a></li>
+                    <li><a class="dropdown-item" href="#">INR</a></li>
+                </ul>
+            </div>
+            <a class="sales">
                 <i class="sales__percentage">
                     %
                 </i>
                 Clearance Sales
             </a>
         </div>
-        <div class="top-bar__shipping shipping">
+        <div class="shipping">
             <span class="shipping__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="20" style="fill:#ffffff">
                     <path
@@ -50,7 +64,7 @@
             </span>
             <span>Hurrah! Get Free Shipping on All Orders Over $99!</span>
         </div>
-        <div class="top-bar__contancts contacts">
+        <div class="contacts">
             <a class="contacts__number number" href="tel:+01-987-654-3210">
                 <i class="number__icon">
                     <img src="./img/phone-icon.svg">
@@ -80,11 +94,11 @@
             <ul class="header__list">
                 <li class="header__item">
                     Home
-                    <span class="header__item--header">NEW</span>
+                    <span class="header__label">NEW</span>
                 </li>
                 <li class="header__item">
                     Shop
-                    <span class="header__item--header">HOT</span>
+                    <span class="header__label">HOT</span>
                 </li>
                 <li class="header__item">
                     Pages
@@ -97,7 +111,7 @@
                 </li>
             </ul>
         </div>
-        <div class="header__user-actions">
+        <div class="header__user-profile">
             <button class="header__search">
                 <svg width="14px" height="20px" viewBox="0 0 512.000000 512.000000" style="fill: #444444"
                     preserveAspectRatio="xMidYMid meet">
@@ -112,10 +126,10 @@
             <ul class="header__myaccount ">
                 My Account
             </ul>
-            <ul class="header__myaccount--mobile ">
+            <ul class="header__myaccount-mobile ">
                 <img src="./img/user_icon.svg" alt="" srcset="">
             </ul>
-            <div class="header__cart cart">
+            <div class="cart">
                 <a href="" class="cart__link">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="20"
                         viewBox="0 0 512 512" width="20">
@@ -131,8 +145,8 @@
         </div>
     </header>
     <main class="page">
-        <section class="page__banner banner">
-            <div class="banner__content owl-carousel owl-theme">
+        <section class="banner">
+            <div class="banner__content owl-carousel">
                 <div class="banner__column">
                     <a class="banner__image" href="#" tabindex="0">
                         <img height="800" width="1903"
@@ -167,7 +181,7 @@
                 </div>
             </div>
         </section>
-        <section class="page__categories categories">
+        <section class="categories">
             <div class="categories__container container">
                 <section class="section__header">
                     <div class="section__subtitle"> Top Categories</div>
@@ -221,7 +235,7 @@
                     </div>
                 </div>
         </section>
-        <section class="page__services services">
+        <section class="services">
             <div class="services__container container">
                 <div class="services__content owl-carousel">
                     <div class="services__item ">
@@ -251,7 +265,7 @@
                 </div>
             </div>
         </section>
-        <section class="page__products products">
+        <section class="products">
             <div class="products__container container">
                 <h2 class="products__title">Trending Products</h2>
                 <div class="products__navigation">
@@ -285,9 +299,9 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$350.00</span>
-                                    <span class="card__price--discount">-13%</span>
-                                    <span class="card__price--old">$400.00</span>
+                                    <span class="price price--new">$350.00</span>
+                                    <span class="price price--discount">-13%</span>
+                                    <span class="price price--old">$400.00</span>
                                 </div>
                             </div>
                         </div>
@@ -311,9 +325,9 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$300.00</span>
-                                    <span class="card__price--discount">-6%</span>
-                                    <span class="card__price--old">$320.00</span>
+                                    <span class="price price--new">$300.00</span>
+                                    <span class="price price--discount">-6%</span>
+                                    <span class="price price--old">$320.00</span>
                                 </div>
                             </div>
                         </div>
@@ -337,9 +351,9 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$100.00</span>
-                                    <span class="card__price--discount">-50%</span>
-                                    <span class="card__price--old">$200.00</span>
+                                    <span class="price price--new">$100.00</span>
+                                    <span class="price price--discount">-50%</span>
+                                    <span class="price price--old">$200.00</span>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +375,7 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$560.00</span>
+                                    <span class="price price--new">$560.00</span>
                                 </div>
                             </div>
                         </div>
@@ -383,7 +397,7 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$450.00</span>
+                                    <span class="price price--new">$450.00</span>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +419,7 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$450.00</span>
+                                    <span class="price price--new">$450.00</span>
                                 </div>
                             </div>
                         </div>
@@ -427,7 +441,7 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$450.00</span>
+                                    <span class="price price--new">$450.00</span>
                                 </div>
                             </div>
                         </div>
@@ -435,7 +449,7 @@
                 </div>
             </div>
         </section>
-        <section class="page__sale sale">
+        <section class="sale">
             <div class="sale__container container">
                 <div class="sale__content">
                     <div class="sale__collection collection _ibg">
@@ -470,7 +484,7 @@
                 </div>
             </div>
         </section>
-        <section class="page__brand brand">
+        <section class="brand">
             <div class="brand__container container">
                 <div class="brand__content owl-carousel">
                     <a class="brand__logo">
@@ -506,7 +520,7 @@
                 </div>
             </div>
         </section>
-        <section class="page__products products">
+        <section class="products">
             <div class="products__container container">
                 <h2 class="products__title">Special Collection</h2>
                 <div class="products__navigation">
@@ -535,9 +549,9 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$300.00</span>
-                                    <span class="card__price--discount">-14%</span>
-                                    <span class="card__price--old">$350.00</span>
+                                    <span class="price price--new">$300.00</span>
+                                    <span class="price price price--discount">-14%</span>
+                                    <span class="price price--old">$350.00</span>
                                 </div>
                             </div>
                         </div>
@@ -559,7 +573,7 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$560.00</span>
+                                    <span class="price price--new">$560.00</span>
                                 </div>
                             </div>
                         </div>
@@ -577,15 +591,15 @@
                                         <li class="color color--active color--pink"></li>
                                         <li class="color color--red"></li>
                                     </ul>
-                                    <ul class="properties__sizes ">
+                                    <ul class="properties__sizes">
                                         <li class="size size--active">S</li>
                                         <li class="size">M</li>
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$100.00</span>
-                                    <span class="card__price--discount">-50%</span>
-                                    <span class="card__price--old">$200.00</span>
+                                    <span class="price price--new">$100.00</span>
+                                    <span class="price price--discount">-50%</span>
+                                    <span class="price price--old">$200.00</span>
                                 </div>
                             </div>
                         </div>
@@ -607,7 +621,7 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$560.00</span>
+                                    <span class="price price--new">$560.00</span>
                                 </div>
                             </div>
                         </div>
@@ -629,7 +643,7 @@
                                     </ul>
                                 </div>
                                 <div class="card__price">
-                                    <span class="card__price--new">$450.00</span>
+                                    <span class="price price--new">$450.00</span>
                                 </div>
                             </div>
                         </div>
@@ -637,7 +651,7 @@
                 </div>
             </div>
         </section>
-        <section class="page__news news">
+        <section class="news">
             <div class="news__container container">
                 <section class="section__header">
                     <div class="section__subtitle">Discover whats new</div>
@@ -707,7 +721,7 @@
             <div class="feeds__container container">
                 <section class="section__header">
                     <div class="section__subtitle">
-                        <img src="./img/instagram_logo_icon_168715.svg">
+                        <img src="./img/instagram_RGB_icon.svg">
                     </div>
                     <h3 class="section__title">Instagram Feeds</h3>
                     <p class="section__description"> Add our new arrivals to your weekly lineup</p>
@@ -749,108 +763,105 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__content">
-                <div class="footer__discover">
-                    <div class="footer__column">
-                        <div class="footer__item item">
-                            <h5 class="item__title">
-                                Information
-                            </h5>
-                            <ul class="footer-navigation__list ">
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Search
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Legal Notice
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        About us
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Terms and Condition
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Contact us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="footer__discover" id="myAccordion">
+                    <div class="footer__item item">
+                        <h5 class="item__title" id="headingOne">
+                            <button class="item__button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne">Information</button>
+                        </h5>
+                        <ul class="footer-navigation__list collapse" id="collapseOne" data-bs-parent="#myAccordion">
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Search
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Legal Notice
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Terms and Condition
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="footer__column">
-                        <div class="footer__item item">
-                            <h5 class="item__title">
-                                Information
-                            </h5>
-                            <ul class="footer-navigation__list">
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Search
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Legal Notice
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        About us
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Terms and Condition
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Contact us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="footer__item item">
+                        <h5 class="item__title">
+                            <button class="item__button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo">Information</button>
+                        </h5>
+                        <ul class="footer-navigation__list collapse" id="collapseTwo" data-bs-parent="#myAccordion">
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Search
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Legal Notice
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Terms and Condition
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="footer__column">
-                        <div class="footer__item item">
-                            <h5 class="item__title">
-                                Information
-                            </h5>
-                            <ul class="footer-navigation__list">
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Search
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Legal Notice
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        About us
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Terms and Condition
-                                    </a>
-                                </li>
-                                <li class="footer-navigation__item">
-                                    <a href="#" class="footer-navigation__link">
-                                        Contact us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="footer__item item">
+                        <h5 class="item__title">
+                            <button class="item__button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree">Information</button>
+                        </h5>
+                        <ul class="footer-navigation__list collapse" id="collapseThree" data-bs-parent="#myAccordion">
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Search
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Legal Notice
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Terms and Condition
+                                </a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a href="#" class="footer-navigation__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer__newsletter newsletter">
@@ -876,7 +887,7 @@
                 </div>
                 <ul class="footer-bar__social social">
                     <li class="social__item">
-                        <a href="#" class="social__link"><img src="./img/TWITTER_icon.svg" alt=""></a>
+                        <a href="#" class="social__link"><img src="./img/twitter_icon.svg" alt=""></a>
                     </li>
                     <li class="social__item">
                         <a href="#" class="social__link"><img src="./img/FB_icon.svg" alt=""></a>
@@ -894,14 +905,7 @@
             </div>
         </div>
     </div>
-    <script src="./js/categories.js"></script>
-    <script src="./js/services.js"></script>
-    <script src="./js/products.js"></script>
-    <script src="./js/brand.js"></script>
-    <script src="./js/feeds.js"></script>
-    <script src="./js/news.js"></script>
-    <script src="./js/banner.js"></script>
-    <script src="./js/dropdown.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
