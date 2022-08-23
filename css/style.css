@@ -80,6 +80,31 @@ body {
 	}
 }
 
+
+@-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 /*--------------------HEADER--------------------*/
 
 .top-bar {
@@ -310,8 +335,8 @@ body {
 
 .cart__counter {
 	position: absolute;
-	top: -5px;
-	right: -15px;
+	top: -10px;
+	right: -5px;
 	background-color: #222222;
 	color: #ffffff;
 	width: 16px;
@@ -404,12 +429,12 @@ body {
 .banner .owl-nav {
 	font-size: 40px;
 	line-height: 40px;
-	visibility: hidden;
+	opacity: 0;
 	transition: all 400ms ease-in-out 0s;
 }
 
 .banner:hover .owl-nav {
-	visibility: visible;
+	opacity: 1;
 }
 
 .banner .owl-prev,
@@ -431,7 +456,17 @@ body {
 	right: 30px;
 }
 
+.banner .owl-nav span {
+	transition: all 400ms ease-in-out 0s;
+}
+
+.banner .owl-nav span:hover {
+	color: #ff8149;
+	cursor: pointer;
+}
+
 .banner .owl-nav .disabled span {
+	color: black;
 	opacity: 0.5;
 	cursor: default;
 }
@@ -440,15 +475,25 @@ body {
 	position: absolute;
 	top: auto;
 	bottom: 34%;
-	left: 10%;
-	right: auto;
 	text-align: center;
 	width: 30%;
+}
+
+.banner__form--left {
+	left: 10%;
+	right: auto;
+}
+
+.banner__form--right {
+	color: #fff;
+	right: 16%;
+	left: auto;
 }
 
 .banner-subtitle {
 	font-size: 18px;
 	margin: 0 0 20px;
+	animation: 1700ms ease-in-out 0s normal none 1 running fadeInLeft;
 }
 
 .banner-title {
@@ -457,29 +502,57 @@ body {
 	font-size: 40px;
 	line-height: 50px;
 	margin: 0 0 25px;
+	animation: 1500ms ease-in-out 0s normal none 1 running fadeInLeft;
 }
 
 .banner-button {
-	border-color: #272727;
 	margin: 0 0 5px;
 	font-family: Cormorant sans-serif;
 	font-size: 16px;
 	display: inline-block;
-	background-color: #222;
-	color: #ffffff;
 	padding: 12px 29px;
 	position: relative;
+	animation: 1900ms ease-in-out 0s normal none 1 running fadeInLeft;
+}
+
+.banner__form--left .banner-button,
+.banner__form--left .banner-button::after {
+	background-color: #222;
+	color: #ffffff;
+	background: linear-gradient(to left, #222 50%, #fff 50%) right;
+	background-size: 200%;
+	transition: .3s ease-out;
+}
+
+.banner__form--left .banner-button:hover,
+.banner__form--left .banner-button:hover:after {
+	color: #222;
+	background-position: left;
+}
+
+.banner__form--right .banner-button,
+.banner__form--right .banner-button::after {
+	background-color: #fff;
+	color: #222;
+	background: linear-gradient(to left, #fff 50%, #222 50%) right;
+	background-size: 200%;
+	transition: .3s ease-out;
+}
+
+.banner__form--right .banner-button:hover,
+.banner__form--right .banner-button:hover:after {
+	color: #fff;
+	background-position: left;
 }
 
 .banner-button::after {
 	content: "";
 	cursor: inherit;
 	left: 0;
-	bottom: -10px;
-	padding: 0 0 1px;
+	bottom: -5px;
+	height: 1px;
 	position: absolute;
 	width: 100%;
-	background-color: #222;
 }
 
 @media (max-width: 1599px) {
@@ -914,11 +987,6 @@ body {
 	flex: 0 1 100%;
 }
 
-.products__column {
-	padding: 0 15px;
-	margin: 0 -15px
-}
-
 .card__image {
 	max-width: 100%;
 	position: relative;
@@ -1042,11 +1110,12 @@ body {
 .products .owl-nav {
 	font-size: 40px;
 	line-height: 40px;
-	visibility: hidden;
+	opacity: 0;
+	transition: all 400ms ease-in-out 0s;
 }
 
 .products:hover .owl-nav {
-	visibility: visible;
+	opacity: 1;
 }
 
 .products .owl-prev,
@@ -1151,11 +1220,6 @@ body {
 
 	.products {
 		padding: 20px 0;
-	}
-
-	.products__column {
-		padding: 0 10px;
-		margin: 0 -10px;
 	}
 
 	.products__item {
@@ -1448,24 +1512,24 @@ body {
 	display: flex;
 	justify-content: center;
 	opacity: 0.7;
-	transition: all 400ms ease-in-out;
+	transition: all 400ms;
 }
 
 .brand__logo:hover {
 	opacity: 1;
 	position: relative;
-	top: -10px;
+	transform: translateY(-10px);
 }
 
 .brand .owl-nav {
 	font-size: 40px;
 	line-height: 40px;
-	visibility: hidden;
+	opacity: 0;
 	transition: all 400ms ease-in-out;
 }
 
 .brand:hover .owl-nav {
-	visibility: visible;
+	opacity: 1;
 }
 
 .brand .owl-prev,

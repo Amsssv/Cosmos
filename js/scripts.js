@@ -1,4 +1,4 @@
-$('.categories__carusel').owlCarousel({
+$('#categories').owlCarousel({
 	loop: true,
 	nav: false,
 	dots: false,
@@ -18,7 +18,7 @@ $('.categories__carusel').owlCarousel({
 	}
 });
 
-$('.feeds__content').owlCarousel({
+$('#feeds').owlCarousel({
 	nav: false,
 	dots: false,
 	margin: 10,
@@ -38,7 +38,7 @@ $('.feeds__content').owlCarousel({
 	}
 });
 
-$('.services__content').owlCarousel({
+$('#services').owlCarousel({
 	nav: false,
 	dots: false,
 	responsive: {
@@ -57,7 +57,7 @@ $('.services__content').owlCarousel({
 	}
 });
 
-$('.products__row').owlCarousel({
+$('#products').owlCarousel({
 	nav: true,
 	dots: false,
 
@@ -81,7 +81,7 @@ $('.products__row').owlCarousel({
 	}
 });
 
-$('.products__row').on('changed.products__row', function (e) {
+$('#products').on('changed#products', function (e) {
 
 	$('button.owl-next').removeAttr('disabled');
 	$('button.owl-prev').removeAttr('disabled');
@@ -100,7 +100,50 @@ $('.products__row').on('changed.products__row', function (e) {
 
 });
 
-$('.news__row').owlCarousel({
+$('#collection').owlCarousel({
+	nav: true,
+	dots: false,
+
+	responsive: {
+		0: {
+			items: 2,
+			margin: 20,
+		},
+		700: {
+			items: 3,
+			margin: 20,
+		},
+		1200: {
+			items: 4,
+			margin: 30,
+		},
+		1400: {
+			items: 5,
+			margin: 30,
+		}
+	}
+});
+
+$('#collection').on('changed#collection', function (e) {
+
+	$('button.owl-next').removeAttr('disabled');
+	$('button.owl-prev').removeAttr('disabled');
+
+	if ((e.page.index + 1) >= e.page.count) {
+		$('button.owl-next').attr('disabled', 'disabled');
+	} else {
+		$('button.owl-next').removeAttr('disabled');
+	}
+
+	if (e.page.index == 0) {
+		$('button.owl-prev').attr('disabled', 'disabled');
+	} else {
+		$('button.owl-prev').removeAttr('disabled');
+	}
+
+});
+
+$('#news').owlCarousel({
 	margin: 30,
 	dots: false,
 	responsive: {
@@ -122,7 +165,7 @@ $('.news__row').owlCarousel({
 	}
 });
 
-$('.news__row').on('changed.news__row', function (e) {
+$('#news').on('changed#news', function (e) {
 
 	$('button.owl-next').removeAttr('disabled');
 	$('button.owl-prev').removeAttr('disabled');
@@ -141,7 +184,7 @@ $('.news__row').on('changed.news__row', function (e) {
 
 });
 
-$('.brand__content').owlCarousel({
+$('#brand').owlCarousel({
 	nav: true,
 	dots: false,
 	responsive: {
@@ -160,7 +203,7 @@ $('.brand__content').owlCarousel({
 	}
 });
 
-$('.banner__content').owlCarousel({
+$('#banner').owlCarousel({
 	nav: true,
 	items: 1
 });
