@@ -1,4 +1,9 @@
-$('#categories').owlCarousel({
+import "./scss/style.scss";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel";
+import "bootstrap";
+
+$("#categories").owlCarousel({
 	loop: true,
 	nav: false,
 	dots: false,
@@ -18,7 +23,7 @@ $('#categories').owlCarousel({
 	}
 });
 
-$('#feeds').owlCarousel({
+$("#feeds").owlCarousel({
 	nav: false,
 	dots: false,
 	margin: 10,
@@ -38,7 +43,7 @@ $('#feeds').owlCarousel({
 	}
 });
 
-$('#services').owlCarousel({
+$("#services").owlCarousel({
 	nav: false,
 	dots: false,
 	responsive: {
@@ -57,7 +62,7 @@ $('#services').owlCarousel({
 	}
 });
 
-$('#products').owlCarousel({
+$("#products").owlCarousel({
 	nav: true,
 	dots: false,
 
@@ -81,26 +86,26 @@ $('#products').owlCarousel({
 	}
 });
 
-$('#products').on('changed#products', function (e) {
+$("#products").on("changed#products", function (e) {
 
-	$('button.owl-next').removeAttr('disabled');
-	$('button.owl-prev').removeAttr('disabled');
+	$("button.owl-next").removeAttr("disabled");
+	$("button.owl-prev").removeAttr("disabled");
 
 	if ((e.page.index + 1) >= e.page.count) {
-		$('button.owl-next').attr('disabled', 'disabled');
+		$("button.owl-next").attr("disabled", "disabled");
 	} else {
-		$('button.owl-next').removeAttr('disabled');
+		$("button.owl-next").removeAttr("disabled");
 	}
 
 	if (e.page.index == 0) {
-		$('button.owl-prev').attr('disabled', 'disabled');
+		$("button.owl-prev").attr("disabled", "disabled");
 	} else {
-		$('button.owl-prev').removeAttr('disabled');
+		$("button.owl-prev").removeAttr("disabled");
 	}
 
 });
 
-$('#collection').owlCarousel({
+$("#collection").owlCarousel({
 	nav: true,
 	dots: false,
 
@@ -124,26 +129,26 @@ $('#collection').owlCarousel({
 	}
 });
 
-$('#collection').on('changed#collection', function (e) {
+$("#collection").on("changed#collection", function (e) {
 
-	$('button.owl-next').removeAttr('disabled');
-	$('button.owl-prev').removeAttr('disabled');
+	$("button.owl-next").removeAttr("disabled");
+	$("button.owl-prev").removeAttr("disabled");
 
 	if ((e.page.index + 1) >= e.page.count) {
-		$('button.owl-next').attr('disabled', 'disabled');
+		$("button.owl-next").attr("disabled", "disabled");
 	} else {
-		$('button.owl-next').removeAttr('disabled');
+		$("button.owl-next").removeAttr("disabled");
 	}
 
 	if (e.page.index == 0) {
-		$('button.owl-prev').attr('disabled', 'disabled');
+		$("button.owl-prev").attr("disabled", "disabled");
 	} else {
-		$('button.owl-prev').removeAttr('disabled');
+		$("button.owl-prev").removeAttr("disabled");
 	}
 
 });
 
-$('#news').owlCarousel({
+$("#news").owlCarousel({
 	margin: 30,
 	dots: false,
 	responsive: {
@@ -165,26 +170,26 @@ $('#news').owlCarousel({
 	}
 });
 
-$('#news').on('changed#news', function (e) {
+$("#news").on("changed#news", function (e) {
 
-	$('button.owl-next').removeAttr('disabled');
-	$('button.owl-prev').removeAttr('disabled');
+	$("button.owl-next").removeAttr("disabled");
+	$("button.owl-prev").removeAttr("disabled");
 
 	if ((e.page.index + 1) >= e.page.count) {
-		$('button.owl-next').attr('disabled', 'disabled');
+		$("button.owl-next").attr("disabled", "disabled");
 	} else {
-		$('button.owl-next').removeAttr('disabled');
+		$("button.owl-next").removeAttr("disabled");
 	}
 
 	if (e.page.index == 0) {
-		$('button.owl-prev').attr('disabled', 'disabled');
+		$("button.owl-prev").attr("disabled", "disabled");
 	} else {
-		$('button.owl-prev').removeAttr('disabled');
+		$("button.owl-prev").removeAttr("disabled");
 	}
 
 });
 
-$('#brand').owlCarousel({
+$("#brand").owlCarousel({
 	nav: true,
 	dots: false,
 	responsive: {
@@ -203,7 +208,7 @@ $('#brand').owlCarousel({
 	}
 });
 
-$('#banner').owlCarousel({
+$("#banner").owlCarousel({
 	nav: true,
 	items: 1
 });

@@ -1,16 +1,4 @@
-@import "./normalize.css";
-
-@-webkit-keyframes "fadeInLeft" {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateX(0);
-	}
-}
+@import "./normalize.scss";
 
 @keyframes "fadeInLeft" {
 	0% {
@@ -24,19 +12,6 @@
 	}
 }
 
-/*--------------------HEADER--------------------*/
-/*----------------------------------top-bar------------------------------------*/
-/*--------------------------------------MAIN PAGE--------------------------------------------*/
-/*--------------------------------------SECTION HEADER---------------------------------------*/
-/*--------------------------------------SECTION CATEGORIES---------------------------------------*/
-/*----------------------------------services PAGE-----------------------------------*/
-/*------------------------------------PRODUCTS------------------------------------*/
-/*------------------------------------PAGE - SALE------------------------------------*/
-/*------------------------------------BRAND - SALE------------------------------------*/
-/*------------------------------------LATEST NEWS------------------------------------*/
-/*------------------------------------INSTAGRAM FEEDS------------------------------------*/
-/*------------------------------------FOOTER------------------------------------*/
-/*------------------------------------FOOTER_BAR------------------------------------*/
 * {
 	font-weight: 400;
 	font-family: Roboto, sans-serif;
@@ -240,7 +215,7 @@ body {
 
 	&::after {
 		position: absolute;
-		content: url("../img/down_icon.svg");
+		content: url("../../public/img/down_icon.svg");
 		height: 20px;
 		width: 20px;
 		font-size: 16px;
@@ -283,7 +258,7 @@ body {
 
 	&::after {
 		position: absolute;
-		content: url("../img/down_icon.svg");
+		content: url("../../public/img/down_icon.svg");
 		height: 20px;
 		width: 20px;
 		font-size: 13px;
@@ -517,7 +492,7 @@ body {
 	margin: 0 0 30px;
 }
 
-.page__categories {
+.categories {
 	margin-bottom: 80px;
 }
 
@@ -1252,7 +1227,7 @@ body {
 	position: relative;
 
 	&::before {
-		content: url("../img/email-icon.svg");
+		content: url("../../public/img/email-icon.svg");
 		position: absolute;
 		height: 20px;
 		width: 20px;
@@ -1800,7 +1775,7 @@ body {
 }
 
 @media (max-width: 767px) {
-	.page__home {
+	.home {
 		margin: 0 0 30px;
 	}
 
@@ -1842,7 +1817,7 @@ body {
 		line-height: 14px;
 	}
 
-	.page__categories {
+	.categories {
 		margin-bottom: 30px;
 	}
 
@@ -1954,7 +1929,7 @@ body {
 }
 
 @media (max-width: 1299px) {
-	.page__categories {
+	.categories {
 		margin-bottom: 50px;
 	}
 
